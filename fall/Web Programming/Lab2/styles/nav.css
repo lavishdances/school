@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: grey;
+    justify-content: space-between;
+    height: 120px;
+    width: 100%;
+    color: white;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+#title{
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    font-family: 'Courier New', Courier, monospace;
+}
+ul{
+    margin-right: 1%;
+}
+#logOut{
+    font-family: 'Courier New', Courier, monospace;
+}

@@ -1,0 +1,32 @@
+/* CSS STYLE SHEET */
+
+/* main styles */
+    /* change our box model */
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+/* typography */
+
+/* color and theme */
+
+    /* ugly dev colors */
+    .red {background-color:red;}
+	.orange {background-color:orange;}
+	.lime {background-color:lime;}
+
+/* layout */
+
+    /* basic layout */
+
+    /* use main as our container for flexbox, create a column of items */
+    body {
+        	min-height: 100vh;
+		    display: flex;
+		    flex-direction: column;
+			
+		
+		}
+	main { flex: 1;}

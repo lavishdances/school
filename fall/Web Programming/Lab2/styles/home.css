@@ -1,0 +1,82 @@
+/* apply a natural box layout model to all elements */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+ }
+ body{
+    margin: 0;
+    padding: 0;
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+body div{
+    position: relative;
+    overflow: hidden;
+    width: 98%;
+    max-width: 100%;
+    min-height: 120px;
+    margin-top: 1%;
+}
+
+
+#middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+#logo{
+    height: 120px;
+    width: 120px;
+    
+}
+#head{
+    display: flex;
+    flex-direction: row;
+}
+
+#tick{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 4rem;
+    margin-top: 50px;
+}
+#tick2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    width: 200px;
+}
+#create{
+    font-size: 40px;
+    font-weight: bold;
+}
+#check{
+    font-size: 40px;
+    font-weight: bold;
+}
+#create2{
+    font-size: 24px;
+    font-weight: bold;
+}
+#check2{
+    font-size: 24px;
+    font-weight: bold;
+}
+#create:hover{
+    cursor: pointer;
+    opacity: 70%;
+}
+#check:hover{
+    cursor: pointer;
+    opacity: 70%;
+}

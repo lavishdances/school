@@ -1,0 +1,32 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* css child property decendant */
+nav	a:link {}
+nav	a:visited {}
+nav	a:hover {}
+nav a:focus {}
+nav a:active {}
+
+/* css and images */
+
+/* logo */
+.logo { height:85px; margin:0; padding:0;}
+/* the img tag */
+.logo img {width:100%;}
+/* you can use max/min width to set a range */
+
+/* background images */
+https://developer.mozilla.org/en-US/docs/Web/CSS/background-image
+
+/* these are raw css  */
+background-image:url("images/uphill.png");
+background-repeat: no-repeat;
+background-size: cover;
+color:white;
+
+ 
