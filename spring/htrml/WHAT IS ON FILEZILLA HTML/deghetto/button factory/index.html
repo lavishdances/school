@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css practice</title>
+  </head>
+  <body>
+    <style>
+         * box-sizing: border-box;
+      p {
+
+          padding: 2rem;
+          font-size: 2rem;
+
+
+      }
+      a:link{color: green;}
+      a:visited{color: green;}
+      a:hover{color: red;}
+      a:focus{color: red;}
+      a:active{color: orange;}
+
+      .button{
+        background-color: red;
+        padding: .5rem;
+      }
+      .button:hover{
+        background-color: green;
+        padding: .5rem;
+        opacity: .50 ;
+        color: black;
+      }
+    </style>
+    <p>
+      This is a basic link
+      <a href="https://www.google.com">jabberwocky</a>
+    </p>
+    <p>
+      <a class="button" href="https://www.google.com"> jabberwocky </a>
+    </p>
+    <style>
+      .sub {
+        background-color: rgb(199, 0, 0);
+        color: white;
+        border: none;
+        height: 27px;
+        width: 100px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: opacity 0.2s;
+      }
+      .sub:hover {
+        opacity: 0.7;
+      }
+      .sub:active {
+        opacity: 0.4;
+      }
+
+      .join {
+        background-color: white;
+        color: blue;
+        border-color: blue;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.2s, color 0.2s;
+      }
+      .join:hover {
+        background-color: blue;
+        color: white;
+      }
+      .join:active {
+        opacity: 0.7;
+      }
+
+      .tweet {
+        border-radius: 50px;
+        cursor: pointer;
+        background-color: rgb(74, 131, 236);
+        width: 50px;
+        height: 27px;
+        color: white;
+        border: none;
+        font-weight: bold;
+        transition: box-shadow 0.2s;
+      }
+      .tweet:hover {
+        box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+      }
+      .tweet:active {
+        opacity: 0.6;
+      }
+    </style>
+
+    <button class="sub">Subscribe</button>
+    <button class="join">Join</button>
+    <button class="tweet">Tweet</button>
+  </body>
+</html>

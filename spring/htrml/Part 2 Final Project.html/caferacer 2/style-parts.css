@@ -1,0 +1,122 @@
+/* CafeRacer.com main style sheet */
+
+/* 
+
+You should already be using the HTML5 starter and semantic HTML. 
+Use the holy grail layout I gave you.
+
+The 'Red Pill' if you need it:
+* {
+	outline: 1px solid red !important;
+	}
+
+Add this to the header of every page above your style.css link. 
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,500;1,100;1,200;1,300;1,800&family=Vollkorn:wght@500&display=swap" rel="stylesheet">
+
+
+ */
+ 
+ 
+ /* 
+ Box sizing: This is the current best practice version of what we have used 
+ */
+ *, *::before, *::after {
+   box-sizing: border-box;
+ }
+header {
+	min-height:120px;
+}
+/* note: footer does not need a set height but you can use it if you want */
+footer .footer-item {max-width:260px;}
+footer .footer-image { width:18rem; }
+
+img {
+	 max-width: 100%;
+   }
+/* Typography */
+ body {
+	 font-family: 'Jost', sans-serif;
+	 font-weight:500;
+ }
+ h1,h2,h3,h4 {font-family: 'Vollkorn', serif; font-weight:500;}
+
+/* logo */
+ 
+ .logo {
+	 width:7rem;
+	 margin:.5rem;
+	 border-radius: 40%;
+	 border: 2px solid black;
+	 background-color:white;
+ }
+ 
+/* class styles */
+ .cover {
+	 /* backgrounds css  */
+	 background-image:url("images/uphill.png");
+	 background-repeat: no-repeat;
+	 background-size: cover;
+ }
+ /* link styles */
+ a {font-weight:bold;}
+ a:link { color:#8c0303; text-decoration: none;}
+ a:visited {}
+ a:hover {color:#f20505;  text-decoration: underline;}
+ a:focus {color:#8c0303;  text-decoration: underline;}
+ a:active {color:#8c0303; text-decoration: underline;}
+ 
+ /* nav links */
+ nav a {
+	 padding:.5rem;
+	 background-color:#6e736a;
+	 color:white;
+ }
+ nav a:link {color:white; text-decoration: none;}
+ nav a:visited {}
+ nav a:hover {color:white;background-color:#f20505;}
+ nav a:focus {color:white;background-color:#8c0303;}
+ nav a:active {color:white;background-color:#8c0303;}
+ 
+/* color theme */
+body {background-color:#eae2db;}
+header { background-color: #1f2625; } 
+footer { background-color:#F2D6B3; }
+
+/* classes */
+/* use for pages with centered columns */
+.content {
+	display:flex; 
+	flex-direction: column;
+	max-width: 800px;
+	margin-bottom:1rem;
+}
+
+/* home/index page */
+.hero {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+.cover {
+	/* backgrounds css  */
+	background-image:url("../images/uphillesspresso.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #1f2625;
+}
+.titles {max-width:35rem; color:white; margin:1rem; text-align:center;}
+.titles h1 {font-size:5rem;background-color:black;
+}
+.titles h2 { font-size:2rem; margin:0; line-height: .8;background-color:black; 
+}
+.titles p {background-color:black; padding:.5rem}
+
+/* coffee form */
+.buy {font-size:1.6rem; background-color:lime;}
+
+/* Drink Menu */
+.menu {max-width:100%; flex-direction:row; flex-wrap:wrap; margin:1rem;}
+.menu img {max-width:600px; margin:1rem;}
